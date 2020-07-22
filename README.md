@@ -275,3 +275,37 @@ JOIN table2 b ON a.ID = b.ID
 JOIN table3 c ON a.ID = c.ID
 
 /* Joining Multiple tables */
+```
+### SQL FLOOR and CEIL
+
+```sql
+SELECT FLOOR(AVG(col1))
+FROM TABLE1
+```
+### SQL REPLACE
+```sql
+SELECT REPLACE('abcd', 'cd', 'ef')
+/* Replaces all occurences of 'cd' with 'ef'.*/
+```
+```sql
+SELECT REPLACE(col1, "ab", "cd")
+/* REPLACES all occurences of ab in column 1 with cd. */
+``` 
+### SQL CASE Statement
+```sql
+SELECT col1, col2, col3, col4
+ORDER BY
+CASE
+    WHEN col1 = NULL THEN col2
+    WHEN col2 = NULL THEN col3
+    ELSE col4
+END
+```
+<https://www.hackerrank.com/challenges/what-type-of-triangle/problem>
+### SQL CONCAT
+```sql
+CONCAT(expression1, expression2, expression3,...)
+```
+NOTE: This works in MySQL.
+<https://www.hackerrank.com/challenges/the-pads/problem>
+
