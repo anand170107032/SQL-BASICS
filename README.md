@@ -126,6 +126,7 @@ BETWEEN  | Between a certain range
 IN       | To specify multiple possible values for a column
 LIKE     | To Search for a pattern
 NOT      | Not equal
+MOD(dividend, divisor)| For calculating remainders
 
 ```sql
 SELECT * from table
@@ -294,6 +295,7 @@ SELECT REPLACE(col1, "ab", "cd")
 ### SQL CASE Statement
 ```sql
 SELECT col1, col2, col3, col4
+FROM table_name
 ORDER BY
 CASE
     WHEN col1 = NULL THEN col2
