@@ -315,4 +315,9 @@ NOTE: This works in MySQL.
 ```sql
 substring(s, 5, 2)
 /* selects 2 characters starting from character at index 5 (Note these are 1 based index) */
+```
+### Group by, aggregates and having clause 
+<https://www.youtube.com/watch?v=K2mFsfhLckw>
 
+### Joins
+https://www.youtube.com/watch?v=KTvYHEntvn8
