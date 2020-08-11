@@ -1,5 +1,8 @@
 # SQL Basics
 
+### What is relaional database management systems and non relational database management system?
+Relational database management systems (RDBMS) use tables to store data (MySQL) and non-relational database maqnagement systems do not use tables to store data (NoSQL)
+
 ### What is SQL?
 Sql stands for structural query language. We can use sql to access and manipulate data in relational database management systems (RDBMS). <br/>
 A database often contains one or more tables. The tables can be broken down into records (rows) and fields (col).
@@ -321,3 +324,7 @@ substring(s, 5, 2)
 
 ### Joins
 https://www.youtube.com/watch?v=KTvYHEntvn8
+
+### Primary and foreign keys
+Primary keys uniquely identify a record. There can be multiple primary keys for a table. <br/>
+Foreign keys are used to link 2 tables together. A foreign key in one table is a primary key in another table.
