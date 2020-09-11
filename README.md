@@ -323,8 +323,41 @@ substring(s, 5, 2)
 <https://www.youtube.com/watch?v=K2mFsfhLckw>
 
 ### Joins
-https://www.youtube.com/watch?v=KTvYHEntvn8
+<https://www.youtube.com/watch?v=KTvYHEntvn8> <br/>
+
+Inner join vs natural join: <https://www.geeksforgeeks.org/difference-between-natural-join-and-inner-join-in-sql/> <br/>
 
 ### Primary and foreign keys
 Primary keys uniquely identify a record. There can be multiple primary keys for a table. <br/>
-Foreign keys are used to link 2 tables together. A foreign key in one table is a primary key in another table.
+Foreign keys are used to link 2 tables together. A foreign key in one table is a primary key in another table. <br/>
+
+Primary Key | Foreign Key
+------------|--------------
+Primary key is used to uniquely identify a record in the table | Foreign key is used to link two tables. A foreign key in one table is generally a primary key in other table
+Only 1 primary key is allowed | Multiple foreign keys are allowed
+Primary key does not allow null values | Foreign keys allow null values
+
+### Data-types in sql
+1) int
+2) varchar(n): A string with maximum n characters
+3) char(n): A string with n characters (Fixed Length)
+4) float
+5) numeric(p, d): A floating number with p - d digit(s) before the decimal point and d digit(s) after the decimal point
+
+### Create table
+```sql
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+```
+### Create table using other table
+```sql
+CREATE TABLE new_table_name AS
+    SELECT column1, column2,...
+    FROM existing_table_name
+    WHERE ....;
+```
