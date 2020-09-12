@@ -210,6 +210,14 @@ SELECT MIN(COL1)
 FROM table_name
 where condition
 ```
+
+### MEDIAN
+```sql
+SELECT ROUND(MEDIAN(col), 4)
+FROM TABLE
+```
+**Note**: The median query works for oracle database only, round function rounds the median upto 4 decimals
+
 Same syntax for other functions
 Count gives us the number of records selected
 
