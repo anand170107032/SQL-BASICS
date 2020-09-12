@@ -361,3 +361,31 @@ CREATE TABLE new_table_name AS
     FROM existing_table_name
     WHERE ....;
 ```
+### SQL Union
+The UNION operator is used to combine the result-set of two or more SELECT statements. <br/>
+
+Each SELECT statement within UNION must have the same number of columns <br/>
+The columns must also have similar data types <br/>
+The columns in each SELECT statement must also be in the same order <br/>
+
+UNION selects only distinct records <br/>
+To allow Duplicate records use UNION ALL <br/>
+
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+```
+
+### Any and All
+The ANY and ALL operators are used with a WHERE or HAVING clause. <br/>
+The ANY operator returns true if any of the subquery values meet the condition. <br/>
+The ALL operator returns true if all of the subquery values meet the condition. <br/>
+
+https://www.w3schools.com/sql/sql_any_all.asp>
+
+### insert into tables
+```sql
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+```
