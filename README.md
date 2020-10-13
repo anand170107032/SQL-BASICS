@@ -5,7 +5,7 @@ Relational database management systems (RDBMS) use tables to store data (MySQL) 
 
 ### What is SQL?
 Sql stands for structural query language. We can use sql to access and manipulate data in relational database management systems (RDBMS). <br/>
-A database often contains one or more tables. The tables can be broken down into records (rows) and fields (col).
+A database often contains one or more tables. The tables can be broken down into **records (rows)** and **fields (col)**.
 
 ### Most used keywords in SQL
 Query   | Function
